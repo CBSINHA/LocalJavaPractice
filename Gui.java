@@ -7,5 +7,7 @@ public class Gui {
         JOptionPane.showMessageDialog(null, "Your name is "+name);
         int age=Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
         JOptionPane.showMessageDialog(null, "You are "+age+" years old");
+        double weight=Double.parseDouble(JOptionPane.showInputDialog("Enter your weight"));
+        JOptionPane.showMessageDialog(null,"You are "+weight+" kg");
     }
 }
