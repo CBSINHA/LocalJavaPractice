@@ -5,6 +5,8 @@ public class Basic{
         System.out.println("Enter your name:\n");
         String name=output.nextLine();
         System.out.println("Your name is: "+name);
+        output.close();
+        
     }
 
 }
