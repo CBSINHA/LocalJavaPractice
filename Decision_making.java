@@ -21,9 +21,14 @@ public class Decision_making {
             }
         }
         else{
-            option.showMessageDialog(null,"There is a saying:\n\"Curiosity kills tha cat\"\nYou have been that cat and entered a number out of bounds!\nI am profoundly disheartened by your choice\nPick carefully now. Your system integrity might depend on it :P\nDO NOT ATTEMPT TO CLOSE THIS DIALOG BOX OR YOUR SYSTEM32 FOLDER WILL BE DELETED\nTo proceed click 'OK'");
-            boolean choice=Boolean.parseBoolean(option.showInputDialog("Enter either 0 or 1"));
-            if(random.nextBoolean()==choice){
+            option.showMessageDialog(null,"There is a saying:\n\"Curiosity kills tha cat\"\nYou have been that cat and entered a number out of bounds!\nI am profoundly disheartened by your choice\nPick carefully now. Your system integrity depends on your luck :P\nDO NOT ATTEMPT TO CLOSE THIS DIALOG BOX OR YOUR SYSTEM32 FOLDER WILL BE DELETED\nTo proceed click 'OK'");
+            int choice=Integer.parseInt(option.showInputDialog("Enter either 0 or 1"));
+            if(choice>1||choice<0){
+                option.showMessageDialog(null,"YOU STUPID!");
+                option.showMessageDialog(null,"Deleting Essential Boot Files..........\nSystem backup before next boot recomended!");
+
+            }
+            else if(random.nextInt(2)==choice){
                 option.showMessageDialog(null,"System backup before next boot recomended!");
                 option.showMessageDialog(null,"Essential boot files deleted");
             }
