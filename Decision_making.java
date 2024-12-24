@@ -16,9 +16,7 @@ public class Decision_making {
             option.showMessageDialog(null,"Backing up System files before next boot is recomended:)");
         }
         else if(x>=0&&x<=9){
-            switch(x){
-
-            }
+            System.out.println("     :(      \nYour numbers didn't match\nTry running the program again to find out what it actually does ;)\nOr maybe try entering numbers out of bounds who knows what lady luck has for you :)");
         }
         else{
             option.showMessageDialog(null,"There is a saying:\n\"Curiosity kills tha cat\"\nYou have been that cat and entered a number out of bounds!\nI am profoundly disheartened by your choice\nPick carefully now. Your system integrity depends on your luck :P\nDO NOT ATTEMPT TO CLOSE THIS DIALOG BOX OR YOUR SYSTEM32 FOLDER WILL BE DELETED\nTo proceed click 'OK'");
@@ -31,6 +29,10 @@ public class Decision_making {
             else if(random.nextInt(2)==choice){
                 option.showMessageDialog(null,"System backup before next boot recomended!");
                 option.showMessageDialog(null,"Essential boot files deleted");
+                option.showMessageDialog(null,"NEVER PUSH YOUR LUCK TOO FAR\n                       XD");
+            }
+            else{
+                option.showMessageDialog(null,"CONGRATULATIONS!\nYou are free to exit now\n              OR              \nYou can run the code again to find out what it actually does ;)");
             }
         }
         scanner.close();
