@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import javax.swing.JOptionPane;//for GUI
 import java.util.Random;
 import java.util.Scanner;
@@ -38,3 +39,6 @@ public class Decision_making {
         scanner.close();
     }
 }
+=======
+hh
+>>>>>>> 5e18a644ead9ef8f6972dce2f6cfec01c4e5a0a8
