@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;//for GUI
 import java.util.Random;
 import java.util.Scanner;
 public class Decision_making {
