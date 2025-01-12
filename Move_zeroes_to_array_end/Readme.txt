@@ -1,0 +1,1 @@
+Take 0s to the end of an array by swapping using 2 pointers.1 for non 0 elements and 1 for 0 elements
