@@ -8,6 +8,15 @@ class palindrome{
         scanner.close();
     }
     public static boolean isPalindrome(String s){
+<<<<<<< HEAD
                  
+=======
+        char[] str=s.toCharArray();
+        int start=0,end=s.length()-1;
+        while (start<end) {
+            if(str[start++]!=str[end--]) return false;
+        }
+        return true;
+>>>>>>> 4f85a17a95ca002add80db2c263dd45415afc26e
     }
 }
